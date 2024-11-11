@@ -1,4 +1,4 @@
-package com.khun.petgallery.ui.theme
+package com.khun.petgallery.presentation.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

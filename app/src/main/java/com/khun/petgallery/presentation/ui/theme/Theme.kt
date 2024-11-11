@@ -1,4 +1,4 @@
-package com.khun.petgallery.ui.theme
+package com.khun.petgallery.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build

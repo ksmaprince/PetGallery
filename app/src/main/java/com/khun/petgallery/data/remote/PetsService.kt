@@ -12,7 +12,7 @@ import retrofit2.http.POST
 import retrofit2.http.Path
 import retrofit2.http.Query
 
-interface petsService {
+interface PetsService {
 
     @GET("v1/images/search?size=small&has_breeds=true&order=RANDOM&page=0")
     suspend fun fetchPetsImages(
@@ -26,7 +26,7 @@ interface petsService {
 
     @POST("v1/favourites")
     suspend fun postFavouritePet(
-        @Body favCat: PostFavPetModel
+        @Body favPet: PostFavPetModel
     ): Response<SuccessResponse>
 
     @DELETE("v1/favourites/{favourite_id}")

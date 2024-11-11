@@ -19,6 +19,8 @@ retrofitVersion = "2.11.0"
 
 
 landscapistGlide = "1.3.6"
+lottieCompose = "6.6.0"
+navigationCompose = "2.8.3"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -49,6 +51,8 @@ dagger-hilt-android-compiler = { group = "com.google.dagger", name = "hilt-andro
 dagger-hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hiltAndroid" }
 
 landscapist-glide = { group = "com.github.skydoves", name = "landscapist-glide", version.ref = "landscapistGlide" }
+lottie-compose = { group = "com.airbnb.android", name = "lottie-compose", version.ref = "lottieCompose" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
