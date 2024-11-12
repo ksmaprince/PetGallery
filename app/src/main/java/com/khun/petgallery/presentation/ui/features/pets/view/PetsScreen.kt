@@ -29,6 +29,7 @@ import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.IconButtonColors
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -227,7 +228,8 @@ private fun PetAppBar(
                 Icon(
                     imageVector = Icons.Default.Home,
                     modifier = Modifier,
-                    contentDescription = TestTags.ACTION_ICON
+                    contentDescription = TestTags.ACTION_ICON,
+                    tint = colorResource(R.color.white)
                 )
             }
         },
@@ -243,7 +245,8 @@ private fun PetAppBar(
                 ) {
                     Icon(
                         imageVector = Icons.Default.Refresh,
-                        contentDescription = TestTags.REFRESH_ACTION
+                        contentDescription = TestTags.REFRESH_ACTION,
+                        tint = colorResource(R.color.white)
                     )
                 }
             }

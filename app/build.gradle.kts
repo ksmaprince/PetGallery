@@ -75,6 +75,7 @@ dependencies {
     //room
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
+    implementation(libs.androidx.core.testing)
     ksp(libs.androidx.room.compiler)
 
     //Retrofit
@@ -99,4 +100,38 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    //Test
+
+    //For InstantTaskExecutorRule
+    implementation(libs.androidx.core)
+    androidTestImplementation(libs.androidx.core)
+
+    // Needed for createComposeRule, but not createAndroidComposeRule:
+    debugImplementation(libs.androidx.ui.test.manifest)
+
+    implementation(libs.androidx.ui.test.junit4.android)
+    testImplementation(libs.junit)
+    testImplementation(libs.mockito.core)
+    testImplementation(libs.mockito.inline)
+
+//For InstantTaskExecutorRule
+    testImplementation(libs.androidx.core.testing)
+
+// AndroidJUnitRunner and JUnit Rules
+    androidTestImplementation(libs.androidx.rules)
+    androidTestImplementation(libs.androidx.orchestrator)
+    androidTestUtil(libs.androidx.runner)
+
+// Assertions
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.truth)
+
+// Espresso dependencies
+    androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(libs.androidx.espresso.contrib)
+    androidTestImplementation(libs.androidx.espresso.intents)
+    androidTestImplementation(libs.androidx.espresso.accessibility)
+    androidTestImplementation(libs.androidx.idling.concurrent)
+
 }

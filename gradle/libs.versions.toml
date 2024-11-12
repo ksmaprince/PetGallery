@@ -21,6 +21,22 @@ retrofitVersion = "2.11.0"
 landscapistGlide = "1.3.6"
 lottieCompose = "6.6.0"
 navigationCompose = "2.8.3"
+mockitoCore = "5.14.2"
+mockitoInline = "5.2.0"
+rules = "1.6.1"
+runner = "1.6.2"
+truth = "1.6.0"
+orchestrator = "1.5.1"
+uiTooling = "1.8.0-alpha05"
+uiTestJunit4 = "1.8.0-alpha05"
+core = "1.6.1"
+truthVersion = "1.4.4"
+uiTestJunit4Android = "1.8.0-alpha05"
+coreTesting = "2.2.0"
+espressoContrib = "3.6.1"
+espressoIntents = "3.6.1"
+espressoAccessibility = "3.6.1"
+idlingConcurrent = "3.6.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -53,6 +69,22 @@ dagger-hilt-android = { group = "com.google.dagger", name = "hilt-android", vers
 landscapist-glide = { group = "com.github.skydoves", name = "landscapist-glide", version.ref = "landscapistGlide" }
 lottie-compose = { group = "com.airbnb.android", name = "lottie-compose", version.ref = "lottieCompose" }
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockitoCore" }
+mockito-inline = { group = "org.mockito", name = "mockito-inline", version.ref = "mockitoInline" }
+androidx-rules = { group = "androidx.test", name = "rules", version.ref = "rules" }
+androidx-runner = { group = "androidx.test", name = "runner", version.ref = "runner" }
+androidx-truth = { group = "androidx.test.ext", name = "truth", version.ref = "truth" }
+androidx-orchestrator = { group = "androidx.test", name = "orchestrator", version.ref = "orchestrator" }
+ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "uiTooling" }
+ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4", version.ref = "uiTestJunit4" }
+androidx-core = { group = "androidx.test", name = "core", version.ref = "core" }
+truth = { group = "com.google.truth", name = "truth", version.ref = "truthVersion" }
+androidx-ui-test-junit4-android = { group = "androidx.compose.ui", name = "ui-test-junit4-android", version.ref = "uiTestJunit4Android" }
+androidx-core-testing = { group = "androidx.arch.core", name = "core-testing", version.ref = "coreTesting" }
+androidx-espresso-contrib = { group = "androidx.test.espresso", name = "espresso-contrib", version.ref = "espressoContrib" }
+androidx-espresso-intents = { group = "androidx.test.espresso", name = "espresso-intents", version.ref = "espressoIntents" }
+androidx-espresso-accessibility = { group = "androidx.test.espresso", name = "espresso-accessibility", version.ref = "espressoAccessibility" }
+androidx-idling-concurrent = { group = "androidx.test.espresso.idling", name = "idling-concurrent", version.ref = "idlingConcurrent" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

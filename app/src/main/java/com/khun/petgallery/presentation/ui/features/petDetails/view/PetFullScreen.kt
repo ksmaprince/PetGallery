@@ -188,7 +188,7 @@ fun PetDetails(url: String?, isFavourite: Boolean, favSelection: (isFav: Boolean
 
 @Preview(showBackground = true)
 @Composable
-fun CatDetailPreview() {
+fun PetDetailPreview() {
     PetGalleryTheme {
         PetFullDetail(Constants.URL, false, { }, { })
     }
