@@ -1,4 +1,4 @@
-package com.khun.petgallery.model.petMock
+package com.khun.petgallery.modelsMocks
 
 import com.khun.petgallery.data.models.petData.Breed
 import com.khun.petgallery.data.models.petData.PetResponse
@@ -11,7 +11,7 @@ data class MocksPetsDataModel(
         toResponsePetBread(MockBreed())
     ),
     val height: Int = 250,
-    val id: String = "IDCat1",
+    val id: String = "IDPet1",
     val url: String = "https://google.com/",
     val width: Int = 250
 )

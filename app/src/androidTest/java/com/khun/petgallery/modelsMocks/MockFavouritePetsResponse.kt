@@ -1,4 +1,4 @@
-package com.khun.petgallery.model.petMock
+package com.khun.petgallery.modelsMocks
 
 import com.google.gson.annotations.SerializedName
 import com.khun.petgallery.data.models.petData.FavouritePetsItem
@@ -12,7 +12,7 @@ data class MockFavouritePetsResponse(
     @SerializedName("created_at")
     val createdAt: String = "2023-10-22T22:13:49.000Z",
     val id: Int = 232,
-    val image: Image = toResponseFavCatImage(MockFavPetImage()),
+    val image: Image = toResponseFavPetImage(MockFavPetImage()),
     @SerializedName("image_id")
     val imageId: String = "5i",
     @SerializedName("sub_id")
@@ -36,7 +36,7 @@ fun toResponseApiFavPets(mocksFavPetsDataModel: MockFavouritePetsResponse): Resp
     )
 }
 
-fun toResponseFavCats(mocksFavPetsDataModel: MockFavouritePetsResponse): NetworkResult<List<PetDataModel>> {
+fun toResponseFavPets(mocksFavPetsDataModel: MockFavouritePetsResponse): NetworkResult<List<PetDataModel>> {
     return NetworkResult.Success(
         listOf(
             PetDataModel(
@@ -53,6 +53,6 @@ data class MockFavPetImage(
     val url: String = "https://cdn2.thecatapi.com/images/5i4.jpg"
 )
 
-fun toResponseFavCatImage(mockFavPetImage: MockFavPetImage): Image {
+fun toResponseFavPetImage(mockFavPetImage: MockFavPetImage): Image {
     return Image(mockFavPetImage.id, mockFavPetImage.url)
 }

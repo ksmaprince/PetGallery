@@ -75,7 +75,6 @@ dependencies {
     //room
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
-    implementation(libs.androidx.core.testing)
     ksp(libs.androidx.room.compiler)
 
     //Retrofit
@@ -103,6 +102,7 @@ dependencies {
 
     //Test
 
+    implementation(libs.androidx.core.testing)
     //For InstantTaskExecutorRule
     implementation(libs.androidx.core)
     androidTestImplementation(libs.androidx.core)
