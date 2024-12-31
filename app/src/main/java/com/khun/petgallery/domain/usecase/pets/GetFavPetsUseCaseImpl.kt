@@ -17,6 +17,7 @@ class GetFavPetsUseCaseImpl(private val petRepository: PetRepository) : GetFavPe
                         val pets = favPet.data?.map { pet ->
                             pet.mapFavPetsDataItem()
                         }
+                        emit(NetworkResult.Success(pets))
                     }
 
                     is NetworkResult.Error -> {

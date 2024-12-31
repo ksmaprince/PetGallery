@@ -76,6 +76,7 @@ dependencies {
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
     ksp(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.testing)
 
     //Retrofit
     implementation(libs.retrofit)
@@ -93,8 +94,8 @@ dependencies {
     implementation(libs.lottie.compose)
 
     testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
+//    androidTestImplementation(libs.androidx.junit)
+//    androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
@@ -119,16 +120,16 @@ dependencies {
     testImplementation(libs.androidx.core.testing)
 
 // AndroidJUnitRunner and JUnit Rules
-    androidTestImplementation(libs.androidx.rules)
+//    androidTestImplementation(libs.androidx.rules)
     androidTestImplementation(libs.androidx.orchestrator)
     androidTestUtil(libs.androidx.runner)
 
 // Assertions
-    androidTestImplementation(libs.androidx.junit)
+//    androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.truth)
 
 // Espresso dependencies
-    androidTestImplementation(libs.androidx.espresso.core)
+//    androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.espresso.contrib)
     androidTestImplementation(libs.androidx.espresso.intents)
     androidTestImplementation(libs.androidx.espresso.accessibility)

@@ -15,7 +15,6 @@ import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 
-@OptIn(ExperimentalCoroutinesApi::class)
 @RunWith(AndroidJUnit4::class)
 @SmallTest
 class PetItemDaoTest {
@@ -33,7 +32,7 @@ class PetItemDaoTest {
     }
 
     @After
-    fun tearDown() {
+    fun cleanUp() {
         appDb.close()
     }
 
@@ -60,5 +59,16 @@ class PetItemDaoTest {
 
         assert(retrievedFavId1 == 1)
         assert(retrievedFavId2 == 2)
+    }
+
+    @Test
+    fun insertFavCatImageRelationListTest() = runTest {
+        val favImageEntities = listOf(
+            getEntityData(3),
+            getEntityData(4)
+        )
+        val count = petFavDao.insertFavPetImageRelation(favImageEntities).size
+
+        assert(count == favImageEntities.size)
     }
 }
